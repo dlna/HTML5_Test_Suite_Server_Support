@@ -8,5 +8,5 @@
 
 zone "web-platform.test" {
 	type master;
-	file "db.web-platform.test";
+	file "/etc/bind/db.web-platform.test";
 	};
