@@ -1,0 +1,19 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo eth0 eth1
+iface lo inet loopback
+
+# The primary network interface
+iface eth0 inet dhcp
+        dns-nameservers 127.0.0.1
+	post-up iptables-restore < /etc/iptables.up.rules
+	post-down iptables -F
+
+iface eth1 inet static
+	address 192.168.0.1
+	netmask 255.255.255.0
+	broadcast 192.168.0.255
+	network 192.168.0.0
+	dns-nameservers 127.0.0.1

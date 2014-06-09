@@ -1,0 +1,15 @@
+$ttl 38400
+web-platform.test.	IN	SOA	ns.web-platform.test. jeremy.global-dlna.org. (
+			1399316011
+			10800
+			3600
+			604800
+			38400 )
+web-platform.test.	IN	NS	ns.web-platform.test.
+web-platform.test.	IN	A	192.168.0.1
+www.web-platform.test.	IN	CNAME	web-platform.test.
+ns.web-platform.test.	IN	A	192.168.0.1
+www1.web-platform.test.	IN	CNAME	web-platform.test.
+www2.web-platform.test.	IN	CNAME	web-platform.test.
+xn--n8j6ds53lwwkrqhv28a.web-platform.test.	IN	CNAME	web-platform.test.
+xn--lve-6lad.web-platform.test.	IN	CNAME	web-platform.test.
