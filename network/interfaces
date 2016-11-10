@@ -7,7 +7,7 @@ iface lo inet loopback
 
 # The primary network interface
 iface eth0 inet dhcp
-        dns-nameservers 127.0.0.1
+	dns-nameservers 127.0.0.1
 	post-up iptables-restore < /etc/iptables.up.rules
 	post-down iptables -F
 
